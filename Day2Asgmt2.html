@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <H2>Various Date Format</H2>
+    </head>
+
+<body>
+
+    <script>
+let date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth() + 1;
+let day = date.getDate();
+
+let format1 = month + '-' + day + '-' + year;
+let format2 = month + '/' + day + '/' + year;
+let format3 = day + '-' + month + '-' + year;
+let format4 = day + '/' + month + '/' + year;
+
+document.write("Format 1 :" + format1 + "<br>");
+document.write("Format 2 :" + format2 + "<br>");
+document.write("Format 3 :" + format3 + "<br>");
+document.write("Format 4 :" + format4 + "<br>");
+
+    </script>
+</body>
+</html>
