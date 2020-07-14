@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>This is Day 2 first assignemt</title>
+    <h2>Time and Date Format</h2>
+</br>    
+</head>
+<body>
+
+    <script>
+
+var GetDayM = new Date();
+  var day = GetDayM.getDay();
+  var Weekdays = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+
+  var hour = GetDayM.getHours();
+  var minute = GetDayM.getMinutes();
+  var second = GetDayM.getSeconds();
+  var prepand = (hour >= 12)? " PM ":" AM ";
+  hour = (hour >= 12)? hour - 12: hour;
+
+
+document.write("Today is : " + Weekdays[day] + ".");
+document.write("<br>");
+document.write("Current Time :" + hour + ":" + minute + ":" + second);
+        
+    </script>
+</body>
+</html>
